@@ -3,7 +3,7 @@ function setup() {
   springX = width/2;
   doggo = loadImage('assets/GoodDog.png');
 }
-let picWidth = 300, picHeight = 200;
+let picWidth = 300, picHeight = 400;
 
 let touching = false;
 let millisecondsSinceLetGo = 0;
@@ -38,7 +38,6 @@ function draw() {
   textSize(42*(1+0.1*sin(millis()*0.001)));
   textAlign(CENTER);
   text("Pet My Dog", width / 2, height / 8);
-  image(doggo, 0, 0);
   
   let angle = -((width/2)-springX)/width;
   let shear_factor = -1 / tan(PI / 2 - angle);
